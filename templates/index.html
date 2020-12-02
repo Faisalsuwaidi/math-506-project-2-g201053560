@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<title>MATH 506 Twitter API Hashtag Wordcloud</title>
+{% endblock %}
+
+{% block body %}
+<div class = "content">
+    <h1 style="text-align: center">Math 506 Project 2</h1>
+    <h1 style="text-align: center">Twitter API Hashtag Word Cloud Generater</h1>
+    <h2 class="" style="text-align: center">Faisal Al-Suwaidi</h2>
+    <h2 class="" style="text-align: center">g201053560</h2>
+    <div class="insert">
+        <form action="/" method = "POST">
+            <span>Insert the Hashtag Below Starting With a # as well as the Number of Tweets to Use in Generation of Wordcloud</span>
+            <input type="text" placeholder="#..." name = "hashtag" id = "content">
+               <input type="number" placeholder="123.." name = "number" id = "quantity" min="1" max="200">
+            <input type="submit" value = "Search">
+        </form>
+    </div>
+     <h2 class="sec-title" style="text-align: center">App Description:</h2>
+    <p style="text-align: center">
+        This App Will Display a Wordcloud Highlighting the 50 Most Important Words Contained in the Most Recent User Specified Number of Tweets Related to the Topic of Provided Hashtag!
+    </p>
+</div>
+{% endblock %}
